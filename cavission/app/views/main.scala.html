@@ -1,0 +1,190 @@
+@*  
+ * This template is called from the index template. This template
+ * handles the rendering of the page header and body tags. It takes
+ * two arguments: a 'String' for the title of the page and an 'Html'
+ * object to insert into the body of the page.
+ *@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/styles.css")">
+    <title>HOME PAGE</title>
+    <style>
+      
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Add styles to header and navigation */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Style for the product sections */
+        .product {
+            display: inline-block;
+            width: 300px;
+            margin: 50px;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            font-size: 20px;
+            color: rgb(86, 16, 184);
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product a {
+            text-decoration: none;
+        }
+
+        .product button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .product button:hover {
+            background-color: #555;
+        }
+
+      /* Your existing CSS styles */
+  
+      h1 {
+          font-size: 30px;
+          color: rgb(240, 237, 243);
+          text-align: center;
+          animation: fadeIn 1.5s ease;
+      }
+  
+      h2 {
+          font-size: 18px;
+          color: #0f00e8;
+          text-align: center;
+          animation: fadeIn 1.5s ease;
+      }
+  
+      p {
+          font-size: 16px;
+          color: #333;
+          text-align: center;
+          line-height: 1.5;
+      }
+  
+      ul {
+          text-align: center;
+      }
+  
+      li {
+          margin-bottom: 10px;
+      }
+  
+      /* Style the search form */
+      form.role-search {
+          display: flex;
+          justify-content: flex-end; /* Move form to the right */
+      }
+  
+      input.form-control {
+          width: 500px; /* Adjust the width as needed */
+          padding: 10px;
+          border: 3px solid #170202;
+          border-radius: 8px;
+      }
+  
+      button.btn-outline-success {
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+      }
+  
+      /* Position the navigation links */
+      ul.nav-links {
+          text-align: left; /* Align links to the left */
+          margin-top: 10px; /* Add spacing below the header */
+      }
+  
+      li.nav-item {
+          display: inline-block;
+          margin-left: 20px; /* Add spacing between links */
+      }
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+              <li><a href="/login"> 🔐LOGIN </a></li>
+              <li><a href="/products">  &#128241;PRODUCTS</a></li>
+                <li><a href="/mycart"> 🛒MYCART</a></l>
+                <li><a href="/about">  &#128218;ABOUT</a></li>
+                <li><a href="/harsh"> 📧 CONTACT US</a></li>
+            </ul>
+        </nav>
+      
+    </header>
+    <nav>
+      <div>
+          <ul class="nav-links">
+              
+          </ul>
+          <form class="role-search" role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+  </nav>
+   
+    
+    @* content area goes here *@
+    @content
+</body>
+</html>

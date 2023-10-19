@@ -1,0 +1,295 @@
+@*
+* this template takes a single argument, a string contaning a 
+*message to display.
+*@
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/styles.css")">
+    <title>PRODUCTS</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Add styles to header and navigation */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Style for the product sections */
+        .product {
+            display: inline-block;
+            width: 300px;
+            margin: 50px;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h3 {
+            font-size: 20px;
+            color: rgb(86, 16, 184);
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 16px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product a {
+            text-decoration: none;
+        }
+
+        .product button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .product button:hover {
+            background-color: #555;
+        }
+
+        /* Add styles to footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(140, 0, 255);
+    /* Add other styles */
+}
+ /* Position the navigation links */
+ ul.nav-links {
+            text-align: left; /* Align links to the left */
+            margin-top: 10px; /* Add spacing below the header */
+        }
+    
+        li.nav-item {
+            display: inline-block;
+            margin-left: 20px; /* Add spacing between links */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/"> &#8962;HOME</a></li>
+                <li><a href="/mycart"> 🛒MYCART</a></li>
+                <li><a href="/login"> 🔐LOGIN </a></li>
+                <li><a href="/about">  &#128218;ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+        <center>
+        <h1>WELCOME TO OUR PRODUCT PAGE</h1>
+        </center>
+       
+            <footer>
+                &copy;OUR PRODUCTS
+            </footer>
+
+             <!-- Product Section 1 -->
+        <section class="product">
+           
+          
+            <!-- Example: Adding an image from an online source -->
+           
+              <img src="https://source.unsplash.com/200x200/?iphone" class="d-block w-20" alt="...">
+              
+
+            <p>Price: ₹11999.00</p>
+            <p>APPLE Mobiles</p>
+           
+            <a href="https://www.apple.com/in/shop/buy-iphone/iphone-15/6.1-inch-display-128gb-black?afid=p238%7CsdoiNjelq-dc_mtid_187079nc38483_pcrid_674224198473_pgrid_153710578059_pntwk_g_pchan_local_pexid__&cid=aos-IN-kwgo-pla-iphone_lia--slid---product-MTP03HN%2FA-IN">
+                <button>BUY NOW</button>
+            </a>
+
+            <button>Add to Cart</button>
+        </section>
+
+           <!-- Product Section 2 -->
+           <section class="product">
+            
+          
+            <!-- Example: Adding an image from an online source -->
+           
+              <img src="https://source.unsplash.com/200x200/?samsung" class="d-block w-20" alt="...">
+              
+
+            <p>Price: ₹4999.00</p>
+            <p>SAMSUNG Mobiles</p>
+            <a href="https://www.samsung.com/in/?msclkid=939c2e4998541fc8097e4b6cb2dba23d">
+            <button>BUY NOW</button>
+        </a>
+            <button>Add to Cart</button>
+        </section>
+
+          <!-- Product Section 3 -->
+          <section class="product">
+            
+          
+            <!-- Example: Adding an image from an online source -->
+           
+              <img src="https://source.unsplash.com/200x200/?oppo" class="d-block w-20" alt="...">
+              
+
+            <p>Price: ₹1999.00</p>
+            <p>OPPO Mobiles</p>
+            <a href="">
+            <button>BUY NOW</button>
+        </a>
+            <button>Add to Cart</button>
+        </section>
+
+         <!-- Product Section 4 -->
+         <section class="product">
+            
+          
+            <!-- Example: Adding an image from an online source -->
+           
+              <img src="https://source.unsplash.com/200x200/?Lava" class="d-block w-20" alt="...">
+              
+
+            <p>Price: ₹1999.00</p>
+            <p>LAVA Mobiles</p>
+            <a href="">
+            <button>BUY NOW</button>
+        </a>
+            <button>Add to Cart</button>
+        </section>
+
+         <!-- Product Section 5 -->
+         <section class="product">
+            
+          
+            <!-- Example: Adding an image from an online source -->
+           
+              <img src="https://source.unsplash.com/200x200/?Nokia" class="d-block w-20" alt="...">
+              
+
+            <p>Price: ₹1999.00</p>
+            <p>NOKIA Mobiles</p>
+            <a href="">
+            <button>BUY NOW</button>
+        </a>
+            <button>Add to Cart</button>
+        </section>
+
+         <!-- Product Section 6 -->
+         <section class="product">
+            
+          
+            <!-- Example: Adding an image from an online source -->
+           
+              <img src="https://source.unsplash.com/200x200/?blackberry" class="d-block w-20" alt="...">
+              
+
+            <p>Price: ₹1999.00</p>
+            <p>BLACKBERRY Mobiles</p>
+            <a href="">
+            <button>BUY NOW</button>
+        </a>
+            <button>Add to Cart</button>
+        </section>
+
+         <!-- Product Section 7 -->
+         <section class="product">
+            
+          
+            <!-- Example: Adding an image from an online source -->
+           
+              <img src="https://source.unsplash.com/200x200/?vivo" class="d-block w-20" alt="...">
+              
+
+            <p>Price: ₹1999.00</p>
+            <p>VIVO Mobiles</p>
+            <a href="">
+            <button>BUY NOW</button>
+        </a>
+            <button>Add to Cart</button>
+        </section>
+
+         <!-- Product Section 8 -->
+         <section class="product">
+            
+          
+            <!-- Example: Adding an image from an online source -->
+           
+              <img src="https://source.unsplash.com/200x200/?oneplus" class="d-block w-20" alt="...">
+              
+
+            <p>Price: ₹7999.00</p>
+            <p>ONEPLUS Mobiles</p>
+            <a href="">
+            <button>BUY NOW</button>
+        </a>
+            <button>Add to Cart</button>
+        </section>
+
+         <!-- Product Section 9 -->
+         <section class="product">
+            
+          
+            <!-- Example: Adding an image from an online source -->
+           
+              <img src="https://source.unsplash.com/200x200/?panasonic" class="d-block w-20" alt="...">
+              
+
+            <p>Price: ₹3999.00</p>
+            <p>LG Mobiles</p>
+            <a href="">
+            <button>BUY NOW</button>
+        </a>
+            <button>Add to Cart</button>
+        </section>
+        <footer>
+            &copy; 2023 Harsh Kaushik
+        </footer>
+    </body>
+
+</html> 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/login.css")">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+    <styles>
+
+    
+        <style>
+            /* Position the navigation links */
+            ul.nav-links {
+                text-align: left; /* Align links to the left */
+                margin-top: 10px; /* Add spacing below the header */
+            }
+        
+            li.nav-item {
+                display: inline-block;
+                margin-left: 20px; /* Add spacing between links */
+            }
+        </style>
+    
+</head>
+<body>
+                <header>
+
+                     <nav>
+                        <ul class="nav-links">
+                    <li><a href="/"> &#8962;HOME</a></li>
+                    <li><a href="/products">  &#128241;PRODUCTS</a></li>
+                    <li><a href="/mycart"> 🛒MYCART</a></li>
+                    <li><a href="/about">  &#128218;ABOUT</a></li>
+                     
+                    </ul>
+                     </nav>
+                </header>
+
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="/login" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Log In</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
