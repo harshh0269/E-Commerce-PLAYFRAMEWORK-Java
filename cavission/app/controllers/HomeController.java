@@ -75,4 +75,10 @@ public class HomeController extends Controller {
     
  
 }  
+# https://tea.xyz/what-is-this-file
+---
+version: 1.0.0
+codeOwners:
+  - '0x96A2B31ba5A4a83f1c063Ae8534ca9466A0bfF25'
+quorum: 1
 
